@@ -92,17 +92,12 @@ Example words:
 - stupid - imok (verb, as in "to be stupid" in English)
 - quick - fandi
 
-*English:* The robot killed
-*Autolingua:* oto labo flam
-
-*English:* The human was killed.
-*Autolingua:* labo flam mit
-
-*English:* The robot is a killer.
-*Autolingua:* oto laba flamo
-
-*English:* The robot killed the stupid human quickly.
-*Autolingua:* oto labo flam afandi imoki
+| English | Autolingua |
+|:---|:---|
+| The robot killed |  Oto labo flam
+| The human was killed | Labo flam mit
+| The robot is a killer | Oto laba flamo
+| The robot killed the stupid human quickly |  Oto labo flam afandi imoki
 
 ## Vocabulary
 
