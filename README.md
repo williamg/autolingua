@@ -15,15 +15,12 @@ less dexterous than a human to write
 
 ## Sound System
 
-The sound system is chosen such that there is minimal similarity betwene sounds.
+The sound system is chosen such that there is minimal similarity between sounds.
 
-### Vowels
-
-`/i/, /e/, /a/, /u/, /o/, /ai/`
-
-### Consonants
-
-`/m/, /p/, /b/, /f/, /n/, /t/, /d/, /s/, /l/, /k/, /g/`
+| Class | Sound |
+|:---:|:--|
+| Vowels | `/i/, /e/, /a/, /u/, /o/, /ai/` |
+| Consonants | `/m/, /p/, /b/, /f/, /n/, /t/, /d/, /s/, /l/, /k/, /g/` |
 
 ## Phonology
 
@@ -68,7 +65,7 @@ Rel. Sepcifier -> epsi, ispe, <year>, <month>, <day>, <hour>, etc.
 ### General Conjugation Rules
 
 - If a verb ends with a consonant, append `i` to turn it into a noun meaning
-a human that does that verb. Append `o` to indicate a robot that does that verb.
+a biological entity (bio) that does that verb. Append `o` to indicate a robot that does that verb.
 If a verb ends with a vowel, append `si` or `so`, respectively.
 - If a verb ends with a consonant, append `end` to turn it into an adjective
 describing a noun that had that verb done to it. If a verb ends with a vowel,
@@ -109,4 +106,3 @@ Useful words:
 |o|I, robot|
 |ti|You, human|
 |to|You, robot|
-
