@@ -19,11 +19,11 @@ The sound system is chosen such that there is minimal similarity betwene sounds.
 
 ### Vowels
 
-/i/, /e/, /a/, /u/, /o/, /ai/
+`/i/, /e/, /a/, /u/, /o/, /ai/`
 
 ### Consonants
 
-/m/, /p/, /b/, /f/, /n/, /t/, /d/, /s/, /l/, /k/, /g/
+`/m/, /p/, /b/, /f/, /n/, /t/, /d/, /s/, /l/, /k/, /g/`
 
 ## Phonology
 
@@ -32,8 +32,9 @@ The sound system is chosen such that there is minimal similarity betwene sounds.
 The syllable structure is (C)(C)V(C)(C). If there is only one consonant in the coda
 and/or onset, then it can be any consonant.
 
-*Complex Onsets*: /fl/, /sl/, /pl/, /kl/
-*Complex Codas*: /st/, /nd/, /\*s/ (where \* is any consonant)
+*Complex Onsets*: `/fl/, /sl/, /pl/, /kl/`
+
+*Complex Codas*: `/st/, /nd/, /\*s/ (where \* is any consonant)`
 
 ### Stress
 
@@ -76,8 +77,8 @@ just append `nd` for the same effect.
 adverb. If an adjective begins with a vowel, prepend `an` for the same effect.
 
 ### Posessive Case
-To say "the <noun1> belonging to <noun2>", you can say "<noun2> titi/toto <noun1>"
-Depending on the case of <noun1>
+To say `the <noun1> belonging to <noun2>`, you can say `<noun2> titi/toto <noun1>`
+Depending on the case of `<noun1>`
 
 ### Pluralization
 TODO
@@ -103,12 +104,14 @@ Example words:
 *English:* The robot killed the stupid human quickly.
 *Autolingua:* oto labo flam afandi imoki
 
-## Lexicon
+## Vocabulary
 
 Useful words:
 
-`i` - I, human
-`o` - I, robot
-`ti` - You, human
-`to` - You, robot
+| Autolingua | Definition |
+|:---|:---|
+|i |I, human|
+|o|I, robot|
+|ti|You, human|
+|to|You, robot|
 
