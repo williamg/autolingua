@@ -45,12 +45,15 @@ To aid parsability by computers, the grammar is context free:
 Sentence       -> Verb Sub
 Sentence       -> Sub Verb
 Sentence       -> Sub Verb Sub
+
 Sub            -> <noun>
-Sub            -> Desc Sub
-Desc           -> <adjective>
+Sub            -> Sub ut Sub
+Sub            -> <adjective> Sub
+
 Verb           -> <verb>
 Verb           -> Time <verb>
 Verb           -> Verb <adverb>
+
 Time           -> labo
 Time           -> laba
 Time           -> labi
@@ -58,6 +61,7 @@ Time           -> labo Rel. Specifier
 Time           -> labi Rel. Specifier
 Time           -> Abs. Specifier
 Time           -> Abs. Specifier
+
 Abs. Specifier -> <year>, <month>, <day>, <hour>, etc.
 Rel. Sepcifier -> epsi, ispe, <year>, <month>, <day>, <hour>, etc.
 ```
@@ -74,8 +78,7 @@ just append `nd` for the same effect.
 adverb. If an adjective begins with a vowel, prepend `an` for the same effect.
 
 ### Posessive Case
-To say `the <noun1> belonging to <noun2>`, you can say `<noun2> titi/toto <noun1>`
-Depending on the case of `<noun1>`
+To say `the <noun1> belonging to <noun2>`, you can say `<noun2> ut <noun1>`
 
 ### Pluralization
 TODO
@@ -84,17 +87,17 @@ TODO
 
 Example words:
 - oto - robot
-- mit - human
+- mitso - human
 - flam - kill
-- stupid - imok (verb, as in "to be stupid" in English)
+- stupid - imok
 - quick - fandi
 
 | English | Autolingua |
 |:---|:---|
 | The robot killed |  Oto labo flam
-| The human was killed | Labo flam mit
+| The human was killed | Labo flam mitso
 | The robot is a killer | Oto laba flamo
-| The robot killed the stupid human quickly |  Oto labo flam afandi imoki
+| The robot killed the stupid human quickly |  Oto labo flam afandi imok mitso
 
 ## Vocabulary
 
