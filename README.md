@@ -42,17 +42,17 @@ Always stress the first syllable
 To aid parsability by computers, the grammar is context free:
 
 ```
-Sentence       -> Verb Sub
-Sentence       -> Sub Verb
-Sentence       -> Sub Verb Sub
+Sentence       -> Verb NP
+Sentence       -> NP Verb
+Sentence       -> NP Verb NP
 
-Sub            -> <noun>
-Sub            -> Sub ut Sub
-Sub            -> <adjective> Sub
+NP            -> <noun>
+NP            -> NP ut NP
+NP            -> <adjective> NP
 
 Verb           -> <verb>
 Verb           -> Time <verb>
-Verb           -> Verb <adverb>
+Verb           -> <adverb> Verb
 
 Time           -> labo
 Time           -> laba
