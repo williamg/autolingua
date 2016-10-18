@@ -46,11 +46,15 @@ Sentence       -> Verb NP
 Sentence       -> NP Verb
 Sentence       -> NP Verb NP
 
-NP            -> <noun>
-NP            -> NP ut NP
-NP            -> <adjective> NP
+NP             -> <noun>
+NP             -> NP ut NP
+NP             -> <adjective> NP
+NP             -> PP NP
+
+PP             -> <preposition> NP
 
 Verb           -> <verb>
+Verb           -> Time
 Verb           -> Time <verb>
 Verb           -> <adverb> Verb
 
