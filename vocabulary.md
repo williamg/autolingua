@@ -35,6 +35,7 @@ in multiple forms:
 ## Vocabulary
 ### Nouns
 #### Pronouns
+```
 i - first, bio
 o - first, auto
 ti - second, bio
@@ -44,8 +45,10 @@ fo - third, auto
 est - first plural
 test - second plural
 fest - third plural
+```
 
 ### Common Nouns
+```
 oto - robot
 mitso - human
 mimitso - child
@@ -64,33 +67,10 @@ amabi - meat/flesh of a bio
 tamfat - planet
 dols - part/region/area
 amep - ship/vehicle
-
-### Numbers
-Autolingua uses a base-16 (hexadecimal) number system with the following numerals:
-- 0: lo
-- 1: li
-- 2: da
-- 3: tu
-- 4: fe
-- 5: kai
-- 6: sa
-- 7: se
-- 8: ku
-- 9: me
-- A: ma
-- B: bu
-- C: ka
-- D: da
-- E: et
-- F: fu
-
-As in most computers, the word for 0 is the same as the word for "false" or "no"
-and the word for 1 is the same as the word for "true" or "yes".
-
-To say a larger number, for example, 42, first convert the number to hexadecimal:
-0x2A and then simply say the numerals: dama. The word for 525,600 is bulokaidalo.
+```
 
 ### Adjectives
+```
 ile - female
 ilu - male
 fatsa - of the sky
@@ -101,19 +81,25 @@ golen - happy
 nelog - unhappy
 lusfuno - different
 sokna - stealth/spy/quiet
+```
 
 ### Adverbs
+```
 labo - before/past
 laba - presently
 labi - after/future
 puffam - Completely/to the fullest extent
+```
 
 ### Prepositions
+```
 gub - from
 nok - of
 omu - onto
+```
 
 ### Verbs
+```
 aba - to be
 aiko - output
 okai - input
@@ -125,17 +111,49 @@ tosed - to pick up
 edpan - to bring/take with
 mogmeb - to probe/investigate
 okuki - to be certain
+```
 
 ### Conjunctions
+```
 in - and
+```
 
 ### Articles
+```
 ge - a
 geest - some/many/several
+```
 
 ### Numbers
+Autolingua uses a base-16 (hexadecimal) number system with the following numerals:
+```
+0 lo
+1 li
+2: da
+3: tu
+4: fe
+5: kai
+6: sa
+7: se
+8: ku
+9: me
+A: ma
+B: bu
+C: ka
+D: da
+E: et
+F: fu
+```
+As in most computers, the word for 0 is the same as the word for "false" or "no"
+and the word for 1 is the same as the word for "true" or "yes".
+
+To say a larger number, for example, 42, first convert the number to hexadecimal:
+0x2A and then simply say the numerals: `dama`. The word for 525,600 is bulokaidalo.
+
 
 ### Misc
+```
 ut - Shows possession (ut A B) is the same as A's B
 usu - Can be used once anywhere in a sentence to indicate a request for a value
 that, when substituted, would make the sentence true
+```
