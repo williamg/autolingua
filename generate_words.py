@@ -9,7 +9,7 @@ complex_codas.extend([x + "s" for x in consonants])
 complex_codas.remove("ss")
 
 num_syllables = 3
-num_words = 20
+num_words = 30
 
 if len(sys.argv) is 2:
     num_syllables = int(sys.argv[1])

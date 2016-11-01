@@ -42,74 +42,27 @@ Always stress the first syllable
 To aid parsability by computers, the grammar is context free:
 
 ```
-Sentence       -> Verb NP
-Sentence       -> NP Verb
-Sentence       -> NP Verb NP
+S       -> lilo S
+S       -> <conj> S S
+S       -> <one-verb> NP
+S       -> <two-verb> NP NP
+S       -> <adverb> 2VP NP
+S       -> <adverb> 1VP NP NP
+S       -> <preposition> NP 1VP NP
+S       -> <preposition> NP 2VP NP
 
-NP             -> <noun>
-NP             -> NP ut NP
-NP             -> <adjective> NP
-NP             -> PP NP
+1VP     -> <one-verb>
+2VP     -> <two-verb>
+1VP     -> <adverb> 1VP
+2VP     -> <adverb> 2VP
+1VP     -> <preposition> NP 1VP
+2VP     -> <preposition> NP 2VP
 
-PP             -> <preposition> NP
+NP      -> <noun>
+NP      -> <article> <noun>
+NP      -> <preposition> NP
+NP      -> <adjective> NP
+NP      -> ut NP NP
 
-Verb           -> <verb>
-Verb           -> Time
-Verb           -> Time <verb>
-Verb           -> <adverb> Verb
-
-Time           -> labo
-Time           -> laba
-Time           -> labi
-Time           -> labo Rel. Specifier
-Time           -> labi Rel. Specifier
-Time           -> Abs. Specifier
-Time           -> Abs. Specifier
-
-Abs. Specifier -> <year>, <month>, <day>, <hour>, etc.
-Rel. Sepcifier -> epsi, ispe, <year>, <month>, <day>, <hour>, etc.
+PP      -> <preposition> NP
 ```
-
-### General Conjugation Rules
-
-- If a verb ends with a consonant, append `i` to turn it into a noun meaning
-a biological entity (bio) that does that verb. Append `o` to indicate a robot that does that verb.
-If a verb ends with a vowel, append `si` or `so`, respectively.
-- If a verb ends with a consonant, append `end` to turn it into an adjective
-describing a noun that had that verb done to it. If a verb ends with a vowel,
-just append `nd` for the same effect.
-- If an adjective begins with a consonant, prepend `a` to turn it into an
-adverb. If an adjective begins with a vowel, prepend `an` for the same effect.
-
-### Posessive Case
-To say `the <noun1> belonging to <noun2>`, you can say `<noun2> ut <noun1>`
-
-### Pluralization
-TODO
-
-### Examples
-
-Example words:
-- oto - robot
-- mitso - human
-- flam - kill
-- stupid - imok
-- quick - fandi
-
-| English | Autolingua |
-|:---|:---|
-| The robot killed |  Oto labo flam
-| The human was killed | Labo flam mitso
-| The robot is a killer | Oto laba flamo
-| The robot killed the stupid human quickly |  Oto labo flam afandi imok mitso
-
-## Vocabulary
-
-Useful words:
-
-| Autolingua | Definition |
-|:---|:---|
-|i |I, human|
-|o|I, robot|
-|ti|You, human|
-|to|You, robot|
