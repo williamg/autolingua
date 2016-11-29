@@ -129,7 +129,7 @@ Autolingua uses a base-16 (hexadecimal) number system with the following numeral
 ```
 0 lo
 1 li
-2: da
+2: ta
 3: tu
 4: fe
 5: kai
