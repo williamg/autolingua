@@ -156,7 +156,7 @@ As in most computers, the word for 0 is the same as the word for "false" or "no"
 and the word for 1 is the same as the word for "true" or "yes".
 
 To say a larger number, for example, 42, first convert the number to hexadecimal:
-0x2A and then simply say the numerals: `dama`. The word for 525,600 is bulokaidalo.
+0x2A and then simply say the numerals: `tama`. The word for 525,600 is bulokaitalo.
 
 
 ### Misc

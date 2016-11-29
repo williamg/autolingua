@@ -42,28 +42,40 @@ Always stress the first syllable
 To aid parsability by computers, the grammar is context free:
 
 ```
-S'      -> lilo S'
-S'      -> <conj> S' S'
-S'      -> S
-S       -> <one-verb> NP
-S       -> <two-verb> NP NP
-S       -> <adverb> S
-S       -> <preposition> NP S
+S'   -> lilo S'
+S'   -> S
+S    -> <conj> S S
+S    -> 1VP NP
+S    -> 2VP NP NP
 
-1VP     -> <one-verb>
-2VP     -> <two-verb>
-1VP     -> <adverb> 1VP
-2VP     -> <adverb> 2VP
-1VP     -> <preposition> NP 1VP
-2VP     -> <preposition> NP 2VP
-1VP     -> lu 1VP 1VP ... ul
-2VP     -> lu 2VP 2VP ... ul
+1VP  -> <one-verb>
+1VP  -> <adverb> 1VP
+1VP  -> <preposition> NP 1VP
+1VP  -> 1VL
 
-NP      -> plai S
-NP      -> <noun>
-NP      -> <article> <noun>
-NP      -> <preposition> NP
-NP      -> <adjective> NP
-NP      -> ut NP NP
-NP      -> lu NP NP ... ul
+2VP  -> <two-verb>
+2VP  -> <adverb> 2VP
+2VP  -> <preposition> NP 2VP
+2VP  -> 2VL
+
+NP   -> plai S
+NP   -> <noun>
+NP   -> <article> <noun>
+NP   -> <preposition> NP
+NP   -> <adjective> NP
+NP   -> ut NP NP
+NP   -> NL
+
+LE   -> ul
+1VL  -> lu 1VLI LE
+1VLI -> la 1VP 1VLI
+1VLI -> la 1VP
+
+2VL  -> lu 2VLI LE
+2VLI -> la 2VP 2VLI
+2VLI -> la 2VP
+
+NL   -> lu NPI LE
+NLI  -> la NP NPI
+NLI  -> la NP
 ```
