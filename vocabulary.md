@@ -19,6 +19,14 @@ _Examples_:
 - `telse` (compute/think) becomes `telseso` (robot computer)
 - `bust` (work) becomes `busti` (human worker)
 
+Adjectives can be changed into nouns in the following ways:
+- Append `and` or `nd` to a verb that ends in a consonant or vowel, respectively
+to turn it into the "metric" used to measure a particular verb.
+
+_Examples_:
+- `nelog` (unhappy) becomes `nelogand` (unhappiness)
+- `lusfuno` (different) becomes `lusfunond` (differences)
+
 **Pluralization**: To make a noun plural, simply append `est`, regardless of
 how it ends.
 
