@@ -1,16 +1,25 @@
 /* Render a string in Autolingua writing */
-var CHAR_SIZE = 75;
+var CHAR_SIZE = 25;
 var SPACE_SIZE = 0.1;
-var LINE_WIDTH = 0.2;
+var LINE_WIDTH = 0.1;
 var DOT_RADIUS = 0.1;
-var LINE_DIST = 0.2;
+var LINE_DIST = 0.25;
 var CHAR_HEIGHT = CHAR_SIZE + (2 * CHAR_SIZE * (LINE_WIDTH + LINE_DIST));
 
 /* Options */
 var DRAW_LINES = true;
 var DRAW_DOTS = false;
 
-var text = "oitupyslmnabkdef0123456789ABCDEF";
+var text =
+"amabi. kukam fest amabi.\n" +
+"kukam fest usu?\n" +
+"abata est okuki. in in labo tosed est kub nok ke tamfat lusfono dolsest" +
+"keest labo omu ut est sokna amep edpan est fest labo puffam mokmen est fest." +
+"puffam kukam fest amabi.\n" +
+"akitelseta o lilo labo yko usu le la kub mikoi slyest la mu fatos memsoest\n"+
+"on pep fest kub mikoi slyest ply ykokyta fest ost yko fest slyest. yko otoest" +
+"slyest.\n";
+
 var c = document.getElementById("canvas");
 
 /* Use full screen */
@@ -74,7 +83,8 @@ var letterDict = {
     'E': 30,
     'F': 31,
     '.': 33,
-    '?': 34
+    '?': 34,
+    ' ': 0
 };
 
 /* Map bit indices to regions */
@@ -141,28 +151,45 @@ function render(text) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var len = text.length;
-    var arr = text.split("");
     var maxLineLen = Math.floor((canvas.width - (2 * CHAR_SIZE)) /
                                 (CHAR_SIZE + (CHAR_SIZE * SPACE_SIZE)));
-    var numLines = 1 + Math.floor(text.length / maxLineLen);
 
     /* Compute bounds */
-    var totalWidth = (len * CHAR_SIZE) + ((len - 1) * CHAR_SIZE * SPACE_SIZE);
+    var x = CHAR_SIZE;
+    var y = CHAR_SIZE;
+    var words = text.split(" ");
+    var leftOnLine = maxLineLen;
 
-    var startX = CHAR_SIZE;
-    var startY = (c.height -
-                  (numLines * (CHAR_HEIGHT + (CHAR_SIZE * SPACE_SIZE)))) / 2;
+    for (var i = 0; i < words.length; i++) {
+        var letters = words[i].split("");
 
-    var x = startX;
-    var y = startY;
-
-    for (var i = 0; i < len; i++) {
-        renderChar(arr[i], x, y);
-        x += CHAR_SIZE + (CHAR_SIZE * SPACE_SIZE);
-
-        if ((i + 1) % maxLineLen == 0) {
+        if (leftOnLine < words[i].length)
+        {
             y += CHAR_HEIGHT + (CHAR_SIZE * SPACE_SIZE);
             x = CHAR_SIZE;
+            leftOnLine = maxLineLen;
+        }
+
+        leftOnLine -= words[i].length;
+
+        for (var j = 0; j < letters.length; ++j)
+        {
+            if (letters[j] == "\n")
+            {
+                y += CHAR_HEIGHT + (CHAR_SIZE * SPACE_SIZE);
+                x = CHAR_SIZE;
+                leftOnLine = maxLineLen;
+                break;
+            }
+
+            renderChar(letters[j], x, y);
+            x += CHAR_SIZE + (CHAR_SIZE * SPACE_SIZE);
+        }
+
+        if (x != CHAR_SIZE)
+        {
+            x += CHAR_SIZE + (CHAR_SIZE * SPACE_SIZE);
+            leftOnLine -= 1;
         }
     }
 }
@@ -180,7 +207,7 @@ function renderChar(letter, x, y) {
     }
 
     if ((code >>> 5) & 1) {
-        /* Numeral */
+        /* Probably 'o' */
         ctx.beginPath();
         ctx.moveTo(x, y + CHAR_SIZE + (LINE_DIST * CHAR_SIZE));
         ctx.lineTo(x + CHAR_SIZE, y + CHAR_SIZE + (LINE_DIST * CHAR_SIZE));

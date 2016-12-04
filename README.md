@@ -47,34 +47,41 @@ S'   -> S
 S    -> <conj> S S
 S    -> 1VP NP
 S    -> 2VP NP NP
+S    -> NP
+S    -> VP
 
+1VP -> ost 1VP
 1VP  -> <one-verb>
 1VP  -> <adverb> 1VP
 1VP  -> <preposition> NP 1VP
 1VP  -> 1VL
 
+2VP  -> ost 2VP
 2VP  -> <two-verb>
 2VP  -> <adverb> 2VP
-2VP  -> <preposition> NP 2VP
+2VP  -> PP 2VP
 2VP  -> 2VL
 
 NP   -> plai S
 NP   -> <noun>
 NP   -> <article> <noun>
-NP   -> <preposition> NP
+NP   -> PP NP
 NP   -> <adjective> NP
 NP   -> ut NP NP
 NP   -> NL
 
 LE   -> ul
-1VL  -> lu 1VLI LE
+1VL  -> le 1VLI LE    (For a list of things that are the same)
+1VL  -> lu 1VLI LE    (For a list of things that are different)
 1VLI -> la 1VP 1VLI
 1VLI -> la 1VP
 
+2VL  -> le 2VLI LE
 2VL  -> lu 2VLI LE
 2VLI -> la 2VP 2VLI
 2VLI -> la 2VP
 
+NL   -> le NPI LE
 NL   -> lu NPI LE
 NLI  -> la NP NPI
 NLI  -> la NP

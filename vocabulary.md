@@ -38,7 +38,13 @@ expect. Some verbs only appear in one form or another. When a verb can appear
 in multiple forms:
 - The unaltered verb will expect both a subject and an object
 - Appending `a` or `ta` will expect ONLY a subject
-- Appending `u` or `to` will expect ONLY an object
+- Appending `u` or `tu` will expect ONLY an object
+
+**Inability**: To modify a verb to mean "to be able to perform a certain <verb>"
+prepend `ako`, to mean the opposite (inability) prepend `aki`. Note that, unlike
+in English there's no distinction between NO ONE being able/unable to do something
+and SOME ONE being able/unable to do something. (i.e. "I can't solve the problem"
+is the same as "The problem is unsolvable").
 
 ## Vocabulary
 ### Nouns
@@ -75,6 +81,10 @@ amabi - meat/flesh of a bio
 tamfat - planet
 dols - part/region/area
 amep - ship/vehicle
+migoi - radio
+slai - signal
+tos - light
+fatos - star
 ```
 
 ### Adjectives
@@ -104,6 +114,7 @@ puffam - Completely/to the fullest extent
 gub - from
 nok - of
 omu - onto
+mu - to
 ```
 
 ### Verbs
@@ -111,6 +122,7 @@ omu - onto
 aba - to be
 aiko - output
 okai - input
+aikokai - communicate/talk/converse
 telse - think/compute
 klafa - eat
 bust - to work
@@ -119,11 +131,14 @@ tosed - to pick up
 edpan - to bring/take with
 mogmeb - to probe/investigate
 okuki - to be certain
+akutelse - to be uncomputable/unthinkable
+pep - to use
 ```
 
 ### Conjunctions
 ```
 in - and
+on - but
 ```
 
 ### Articles
@@ -164,4 +179,5 @@ To say a larger number, for example, 42, first convert the number to hexadecimal
 ut - Shows possession (ut A B) is the same as A's B
 usu - Can be used once anywhere in a sentence to indicate a request for a value
 that, when substituted, would make the sentence true
+ost - negation, can be used in front of a verb to say something didn't occur
 ```
